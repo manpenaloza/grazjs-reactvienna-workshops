@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
 import styled from 'styled-components';
+import { workshops } from "./content";
 
 const MainWrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  height: 
+  flex-direction: column;
+
+  @media(min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 const WrapperContentBox = styled.div`
   flex: 1;
   color: white;
   border: 3px dotted #5F719F;
+  box-sizing: content-box;
 `;
 
 const WrapperFactsBox = styled(WrapperContentBox)`
@@ -30,11 +35,26 @@ const HeadlineFacts = styled(HeadlineWorkshops)`
 
 const WorkshopBox = styled.div`
   padding: 0 1em 2em 1em;
+  color: #333;
+  text-align: initial;
 `;
 
+const Workshop = ({
+  nameTutor,
+  title,
+  description,
+  price,
+  workshops,
+  maxParticipants,
+}) => {
+  return (
+    <div>{nameTutor}</div>
+  )
+}
 
 class App extends Component {
   render() {
+
     return (
       <div className="App">
         <header className="App-header">
@@ -44,7 +64,9 @@ class App extends Component {
           <WrapperContentBox>
             <HeadlineWorkshops>workshops</HeadlineWorkshops>
             <WorkshopBox>
-              <h3></h3>
+              {
+                Object.keys(workshops).map( workshopKey => <Workshop {...workshops[workshopKey]}/> )
+              }
             </WorkshopBox>
           </WrapperContentBox>
           <WrapperFactsBox>
