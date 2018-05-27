@@ -86,6 +86,12 @@ const CTAButton = styled.a`
   color: #1D2029;
   font-weight: 800;
   text-align: center;
+  transition: all .2s ease-in;
+
+  &:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px -5px #fff;
+  }
 `;
 
 const Workshop = ({
