@@ -130,8 +130,7 @@ const Workshop = ({
       <h3 style={{ fontSize: "1.3em", fontWeight: 700 }}>{title}</h3>
       <p>by <TutorImage src={image} /><TutorLink href={twitter} target="_blank">{nameTutor}</TutorLink></p>
       <p>{description}</p>
-      <ContentInfoBox>Participation will be {price} Euros (net).</ContentInfoBox>
-      <ContentInfoBox>At a maximum there'll be {maxParticipants} participants.</ContentInfoBox>
+      <ContentInfoBox>Price: {price} € excluding 20% VAT - Maximum {maxParticipants} persons.</ContentInfoBox>
       <CTAButton>Book a place</CTAButton>
       <hr style={{ borderColor: "#1D1F21", marginBottom: "5vw", marginTop: "3vw" }}/>
     </section>

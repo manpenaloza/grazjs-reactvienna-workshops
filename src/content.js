@@ -35,7 +35,7 @@ export const workshops = {
     ],
     maxParticipants: 10,
   },
-  Juho: {
+  juho: {
     nameTutor: "Juho Vespäläinen",
     twitter: "https://twitter.com/bebraw",
     image: "https://d33wubrfki0l68.cloudfront.net/ecc0f45f398b8725a20ef8872ce8b7504cee0b90/7c9a7/9ab9d94edb387f16133540582a9f8a2b.jpg",
