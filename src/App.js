@@ -109,6 +109,12 @@ const TutorImage = styled.img`
   height: 32px;
 `;
 
+const ContentInfoBox = styled.p`
+  font-weight: 700;
+  background-color: #2e313a;
+  padding: 6px;
+`;
+
 const Workshop = ({
   nameTutor,
   twitter,
@@ -124,7 +130,8 @@ const Workshop = ({
       <h3 style={{ fontSize: "1.3em", fontWeight: 700 }}>{title}</h3>
       <p>by <TutorImage src={image} /><TutorLink href={twitter} target="_blank">{nameTutor}</TutorLink></p>
       <p>{description}</p>
-      <p style={{ fontWeight: 700, backgroundColor: "#2e313a", padding: "6px" }}>maximum participants: {maxParticipants}</p>
+      <ContentInfoBox>Participation will be {price} Euros (net).</ContentInfoBox>
+      <ContentInfoBox>At a maximum there'll be {maxParticipants} participants.</ContentInfoBox>
       <CTAButton>Book a place</CTAButton>
       <hr style={{ borderColor: "#1D1F21", marginBottom: "5vw", marginTop: "3vw" }}/>
     </section>
