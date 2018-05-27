@@ -71,6 +71,11 @@ const HeadlineContainer = styled.div`
 const TutorLink = styled.a`
   color: #5F719F;
   font-size: 1.3em;
+
+  &:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 6px 15px -5px #000;
+  }
 `
 const CTAButton = styled.a`
   display: inline-block;
@@ -90,12 +95,24 @@ const CTAButton = styled.a`
 
   &:hover{
     transform: translateY(-2px);
-    box-shadow: 0px 6px 10px -5px #fff;
+    box-shadow: 0px 6px 15px -5px #000;
   }
+`;
+
+const TutorImage = styled.img`
+  display: inline-block;
+  margin-right: .6em;
+  vertical-align: bottom;
+  border-radius: 100%;
+  border-style: none;
+  width: 32px;
+  height: 32px;
 `;
 
 const Workshop = ({
   nameTutor,
+  twitter,
+  image,
   title,
   description,
   price,
@@ -104,12 +121,12 @@ const Workshop = ({
 }) => {
   return (
     <section>
-      <h3>{title}</h3>
-      <p>with <TutorLink href="#">{nameTutor}</TutorLink></p>
+      <h3 style={{ fontSize: "1.3em", fontWeight: 700 }}>{title}</h3>
+      <p>by <TutorImage src={image} /><TutorLink href={twitter} target="_blank">{nameTutor}</TutorLink></p>
       <p>{description}</p>
-      <p style={{ fontWeight: 700, fontSize: "1.3em", }}>maximum participants: {maxParticipants}</p>
+      <p style={{ fontWeight: 700, backgroundColor: "#2e313a", padding: "6px" }}>maximum participants: {maxParticipants}</p>
       <CTAButton>Book a place</CTAButton>
-      <hr style={{ borderColor: "#1D1F21", marginBottom: "4vw", marginTop: "2vw" }}/>
+      <hr style={{ borderColor: "#1D1F21", marginBottom: "5vw", marginTop: "3vw" }}/>
     </section>
   )
 }
@@ -125,7 +142,7 @@ class App extends Component {
           </HeadlineContainer>
           <MainWrapper>
             <WrapperContentBox>
-              <Headline>workshops:</Headline>
+              <Headline>workshops</Headline>
               <WorkshopsBox>
                 {
                   Object.keys(workshops)
@@ -134,7 +151,7 @@ class App extends Component {
               </WorkshopsBox>
             </WrapperContentBox>
             <WrapperFactsBox>
-              <HeadlineFacts>venue / date / time:</HeadlineFacts>
+              <HeadlineFacts>venue / date / time</HeadlineFacts>
             </WrapperFactsBox>
           </MainWrapper> 
         </ContentContainer>
