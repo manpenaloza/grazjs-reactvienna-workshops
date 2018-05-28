@@ -55,7 +55,7 @@ export const workshops = {
     twitter: "https://twitter.com/bebraw",
     image: "https://d33wubrfki0l68.cloudfront.net/ecc0f45f398b8725a20ef8872ce8b7504cee0b90/7c9a7/9ab9d94edb387f16133540582a9f8a2b.jpg",
     title: "Webpack - The Good Parts",
-    description: "In this high-level overview you'll learn how to configure Webpack. Even if you know it already, there might be some surprises in store as you gain insight to the tool you otherwise might miss.",
+    description: "In this high-level overview you'll learn how to configure Webpack. Even if you know it already, there might be some surprises in store as you gain insight to the tool you otherwise might miss.\n The slides of the workshop - which base on the <a style=\"color: #5F719F\" target=\"_blank\" href=\"https://survivejs.com/webpack\">Webpack assets of SurviveJS</a> - can already be checked <a style=\"color: #5F719F\" target=\"_blank\" href=\"https://presentations.survivejs.com/webpack-the-good-parts/\">here</a>.",
     shortNotes: [
       "Fundamental ideas of webpack",
       "Development techniques",
