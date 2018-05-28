@@ -123,6 +123,7 @@ const Workshop = ({
   description,
   price,
   workshops,
+  shortNotes,
   maxParticipants,
 }) => {
   return (
@@ -130,6 +131,13 @@ const Workshop = ({
       <h3 style={{ fontSize: "1.3em", fontWeight: 700 }}>{title}</h3>
       <p>by <TutorImage src={image} /><TutorLink href={twitter} target="_blank">{nameTutor}</TutorLink></p>
       <p>{description}</p>
+      <br />
+      <p>
+        The topics covered include:
+        <ul>
+          { shortNotes.map( note => <li>{note}</li> ) } 
+        </ul>
+      </p>
       <ContentInfoBox>Price: {price} € excluding 20% VAT - Maximum {maxParticipants} persons.</ContentInfoBox>
       <CTAButton>Book a place</CTAButton>
       <hr style={{ borderColor: "#1D1F21", marginBottom: "5vw", marginTop: "3vw" }}/>
