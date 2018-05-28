@@ -30,7 +30,7 @@ export const workshops = {
     nameTutor: "Andrey Okonetchnikov",
     twitter: "https://twitter.com/okonetchnikov",
     image: "https://d33wubrfki0l68.cloudfront.net/dbad9c1b60d7f66c3bf2b4a32c63cb2c7234be6f/8fbac/37710e788d37eaf9d3cf7d09d1074eeb.jpg",
-    title: "Component-driven Development",
+    title: "Component-driven Design Systems with React",
     description: "Web applications becoming bigger and more complex, and as they grow, the complexity of the User Interface, arguably the most important part of your application, increases. And with it, your responsibility as a UI developer.\n A traditional development workflow — change code, refresh the app in the browser, click-click-click to reproduce the desired state, repeat — doesn't work anymore. Tools like React hot loader make it faster but don't really fix the underlying issue.",
     price: "290,00",
     shortNotes: [
@@ -48,7 +48,7 @@ export const workshops = {
     maxParticipants: 10,
   },
   juho: {
-    nameTutor: "Juho Vespäläinen",
+    nameTutor: "Juho Vepsäläinen",
     twitter: "https://twitter.com/bebraw",
     image: "https://d33wubrfki0l68.cloudfront.net/ecc0f45f398b8725a20ef8872ce8b7504cee0b90/7c9a7/9ab9d94edb387f16133540582a9f8a2b.jpg",
     title: "Webpack - The Good Parts",
