@@ -83,7 +83,7 @@ const CTAButton = styled.a`
   margin-top: 1vw;
   min-width: 12rem;
   cursor: pointer;
-  font-size: 1.3em;
+  font-size: 1.1em;
   background: linear-gradient(90deg,#5F719F,#489851);
   padding: 15px 18px;
   border-radius: 5px;
@@ -140,7 +140,7 @@ const Workshop = ({
         </ul>
       </p>
       <ContentInfoBox>Price: {price} € excluding 20% VAT - Maximum {maxParticipants} persons.</ContentInfoBox>
-      <CTAButton>Book a place</CTAButton>
+      <CTAButton href="https://docs.google.com/forms/d/e/1FAIpQLSfnRIbylLrOyz2ohSjs8I_KbF2R-cG-2FoVhliWmb7tcavzsA/viewform?usp=sf_link" target="_blank">Book a place</CTAButton>
       <hr style={{ borderColor: "#1D1F21", marginBottom: "5vw", marginTop: "3vw" }}/>
     </section>
   )
@@ -166,7 +166,7 @@ class App extends Component {
               </WorkshopsBox>
             </WrapperContentBox>
             <WrapperFactsBox>
-              <HeadlineFacts>venue / date / time</HeadlineFacts>
+              <HeadlineFacts>venue</HeadlineFacts>
             </WrapperFactsBox>
           </MainWrapper> 
         </ContentContainer>
