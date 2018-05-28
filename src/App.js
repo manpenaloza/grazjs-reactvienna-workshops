@@ -136,6 +136,11 @@ const Workshop = ({
         </ul>
       </p>
       <ContentInfoBox>Price: {price} € excluding 20% VAT - Maximum {maxParticipants} persons.</ContentInfoBox>
+      {
+        workshops.map( ({ date, time: { start, end } }) => {
+          return ( <ContentInfoBox>{date} - {start} to {end}</ContentInfoBox>)
+        })
+      }
       <CTAButton href="https://docs.google.com/forms/d/e/1FAIpQLSfnRIbylLrOyz2ohSjs8I_KbF2R-cG-2FoVhliWmb7tcavzsA/viewform?usp=sf_link" target="_blank">Book a place</CTAButton>
       <hr style={{ borderColor: "#1D1F21", marginBottom: "5vw", marginTop: "3vw" }}/>
     </section>
