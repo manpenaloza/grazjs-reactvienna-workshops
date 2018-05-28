@@ -124,6 +124,7 @@ const Workshop = ({
   maxParticipants,
 }) => {
   
+  const VAT = nameTutor == "Juho Vepsäläinen" ? "24" : "20";
 
   return (
     <section>
@@ -138,7 +139,7 @@ const Workshop = ({
           { shortNotes.map( note => <li>{note}</li> ) } 
         </ul>
       </p>
-      <ContentInfoBox>Price: {price} € excluding 20% VAT - Maximum {maxParticipants} persons.</ContentInfoBox>
+      <ContentInfoBox>Price: {price} € excluding {VAT}% VAT - Maximum {maxParticipants} persons.</ContentInfoBox>
       {
         workshops.map( ({ date, time: { start, end } }) => {
           return ( <ContentInfoBox>{date} - {start} to {end}</ContentInfoBox>)
