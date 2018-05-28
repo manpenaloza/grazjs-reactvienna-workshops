@@ -38,10 +38,6 @@ const ContentBox = styled.div`
   text-align: initial;
 `;
 
-const WorkshopsBox = styled(ContentBox)`
-
-`;
-
 const MainContainerWithColoredBackground = styled.div`
   background: linear-gradient( to bottom, #489851 0%, #5F719F 100% ); 
   height: 100vh;
@@ -158,15 +154,47 @@ class App extends Component {
           <MainWrapper>
             <WrapperContentBox>
               <Headline>workshops</Headline>
-              <WorkshopsBox>
+              <ContentBox>
                 {
                   Object.keys(workshops)
                     .map( workshopKey => <Workshop {...workshops[workshopKey]}/> )
                 }
-              </WorkshopsBox>
+              </ContentBox>
             </WrapperContentBox>
             <WrapperFactsBox>
               <HeadlineFacts>venue</HeadlineFacts>
+              <ContentBox>
+                <p>All workshops will take place in beautiful southern Styria at <strong>Weingut Pichler Schober</strong>.</p>
+                <p>
+                  address:<br/>
+                  Mitteregg 26,<br/>
+                  8505 Mitteregg<br/>
+                  <br/>
+                  ~ 30min from Graz<br/>
+                  ~ 40min from Maribor
+                </p>
+                <div style={{
+                  heigth: 0,
+                  overflow: "hidden",
+                  paddingBottom: "56%",
+                  position: "relative",
+                }}>
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10924.382219901187!2d15.4505889!3d46.8024236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb85964153d16202!2sWeingut+Pichler-Schober!5e0!3m2!1sde!2sat!4v1527513972272"
+                    frameborder="0"
+                    style={{ 
+                      border: "0",
+                      height: "100%",
+                      left: 0,
+                      position: "absolute",
+                      top: 0,
+                      width: "100%",
+                    }}
+                    allowfullscreen={true}
+                  ></iframe>
+                </div>
+                <p>In case you are looking for travel possibilities or offer a lift for somebody, you can use the <a style={{ color: "#5F719F"}} href="https://www.meetup.com/de-DE/grazjs/events/249491912/" target="_blank">discussion panel</a> of our <a style={{ color: "#5F719F"}} target="_blank" href="https://www.meetup.com/de-DE/grazjs/events/249491912/">meetup</a> (which will take place on 6th June in the evening).</p>
+              </ContentBox>
             </WrapperFactsBox>
           </MainWrapper> 
         </ContentContainer>
