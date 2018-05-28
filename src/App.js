@@ -123,12 +123,15 @@ const Workshop = ({
   shortNotes,
   maxParticipants,
 }) => {
+  
+
   return (
     <section>
       <h3 style={{ fontSize: "1.3em", fontWeight: 700 }}>{title}</h3>
       <p>by <TutorImage src={image} /><TutorLink href={twitter} target="_blank">{nameTutor}</TutorLink></p>
-      <p>{description}</p>
-      <br />
+      <p dangerouslySetInnerHTML={{
+        __html: description.replace(/(?:\r\n|\r|\n)/g, '<br/><br/>')
+      }} />
       <p>
         The topics covered include:
         <ul>

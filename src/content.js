@@ -31,10 +31,13 @@ export const workshops = {
     twitter: "https://twitter.com/okonetchnikov",
     image: "https://d33wubrfki0l68.cloudfront.net/dbad9c1b60d7f66c3bf2b4a32c63cb2c7234be6f/8fbac/37710e788d37eaf9d3cf7d09d1074eeb.jpg",
     title: "Component-driven Design Systems with React",
-    description: "Web applications becoming bigger and more complex, and as they grow, the complexity of the User Interface, arguably the most important part of your application, increases. And with it, your responsibility as a UI developer.\n A traditional development workflow — change code, refresh the app in the browser, click-click-click to reproduce the desired state, repeat — doesn't work anymore. Tools like React hot loader make it faster but don't really fix the underlying issue.",
+    description: "Design systems offer a systematic approach to design and make user experience consistent, they improve the development velocity and allow faster iterations on design. Defining the design language is just one part of multiple steps on the way to DS-nirvana. Creating and maintaining design systems in code is crucial for applications.\n- What font style should be used in a particular block?\n- Which props buttons accept?\n- How to ensure that the whole UI is consistent?\nIn order to answer those questions designers and developers have to speak the same language. Component library that follows design systems and serves a common language for designer and developers is another part of the DS effort.",
     price: "290,00",
     shortNotes: [
-
+      "Learn why some design principles are important and how design systems help enforce design language",
+      "Learn Component-driven Development with React",
+      "How to create a simple UI Component Library that is attached to a design system",
+      "Create a simple application using design system and our component library"
     ],
     workshops: [
       { 
