@@ -44,9 +44,9 @@ const WorkshopsBox = styled(ContentBox)`
 
 const MainContainerWithColoredBackground = styled.div`
   background: linear-gradient( to bottom, #489851 0%, #5F719F 100% ); 
-  min-height: 100vh;
+  height: 100vh;
   padding: 1.7vw;
-  box-model: border-box;
+  box-sizing: border-box;
 `;
 
 const ContentContainer = styled.div`
@@ -58,6 +58,7 @@ const ContentContainer = styled.div`
   flex-wrap: nowrap;
   font-family: Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   letter-spacing: 1.6px;
+  overflow: auto;
 `;
 
 const HeadlineContainer = styled.div`
