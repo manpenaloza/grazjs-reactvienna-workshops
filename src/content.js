@@ -41,7 +41,7 @@ export const workshops = {
     ],
     workshops: [
       { 
-        date: "06.06.2018", 
+        date: "07.06.2018", 
         time: {
           start: "09:30",
           end: "17:30",
@@ -67,13 +67,13 @@ export const workshops = {
     ],
     price: "145,00",
     workshops: [
-      { date: "06.06.2018", time: {
-        start: "09:30",
-        end: "14:00",
+      { date: "07.06.2018", time: {
+        start: "09:00",
+        end: "12:30",
       }},
       { date: "07.06.2018", time: {
-        start: "09:30",
-        end: "14:00",
+        start: "13:30",
+        end: "17:00",
       }}
     ],
     maxParticipants: 5,
